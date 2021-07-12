@@ -1,0 +1,4 @@
+---
+- name: say hello world from 2. file
+  debug:
+    msg: "Hello world from second task file"

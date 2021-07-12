@@ -1,0 +1,12 @@
+---
+- hosts: example_hosts
+  tasks:
+    - name: Import first task file
+      import_tasks: first_tasks.yml
+      tags:
+        - first_task # -> alle tasks in "first_task.yml" bekommen den tag "first_task" zugewiesen
+
+    - name: Import second task file
+      import_tasks: second_tasks.yml
+      tags:
+        - second_task #   -> alle tasks in "second_tasks.yml" bekommen den tag "second_task" zugewiesen
